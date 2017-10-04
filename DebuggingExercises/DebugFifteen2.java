@@ -15,12 +15,12 @@ public class DebugFifteen2 extends JFrame
    public DebugFifteen2()
    {
       con = this.getContentPane();
-      con.setLayout(new BorderLayout())
-      con.add(nb);
-      con.add(sb);
-      con.add(eb);
-      con.add(wb);
-      con.add(cb);
+      con.setLayout(new BorderLayout());
+      con.add(nb, BorderLayout.NORTH);
+      con.add(sb, BorderLayout.SOUTH);
+      con.add(eb, BorderLayout.EAST);
+      con.add(wb, BorderLayout.WEST);
+      con.add(cb, BorderLayout.CENTER);
    }
    public static void main(String[] args)
    {

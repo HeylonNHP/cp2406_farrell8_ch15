@@ -6,7 +6,7 @@ import java.awt.*;
 public class DebugFifteen3 extends JFrame implements KeyListener
 {
    char key;
-   Container con = null;
+   Container con = getContentPane();
    GridLayout grid = new GridLayout(2, 1);
    JLabel label = new JLabel("Key Typed:");
    JTextArea textArea = new JTextArea(4, 25);
@@ -22,7 +22,7 @@ public class DebugFifteen3 extends JFrame implements KeyListener
    }
 
    @Override
-   public void keyTyped()
+   public void keyTyped(KeyEvent e)
    {
       char c = e.getKeyChar();
       label.setText ("Key Typed: " + c);
@@ -31,6 +31,11 @@ public class DebugFifteen3 extends JFrame implements KeyListener
    @Override
    public void keyReleased(KeyEvent e)
    {
+   }
+
+   @Override
+   public void keyPressed(KeyEvent e){
+
    }
 
    public static void main(String[] args)

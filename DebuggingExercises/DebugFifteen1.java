@@ -21,17 +21,17 @@ public class DebugFifteen1 extends JFrame implements ActionListener
       add(panel1);
       add(panel2);
       panel1.add(button1);
-      panel1.add(button1);
-      panel1.add(button1);
-      panel1.add(button1);
-      panel1.add(button1);
+      panel1.add(button2);
+      panel1.add(button3);
+      panel1.add(button4);
+      panel1.add(button5);
 
 
-      button1.addActionListener();
-      button2.addActionListener();
-      button3.addActionListener();
-      button4.addActionListener();
-      button5.addActionListener();
+      button1.addActionListener(this);
+      button2.addActionListener(this);
+      button3.addActionListener(this);
+      button4.addActionListener(this);
+      button5.addActionListener(this);
       setSize(400, 200);
       setVisible(true);
    }
@@ -48,7 +48,7 @@ public class DebugFifteen1 extends JFrame implements ActionListener
       else if(source  == button4)         
          panel2.setBackground(Color.YELLOW);
       else 
-         panel2.setBackground(Color.YELLOW);
+         panel2.setBackground(Color.BLACK);
    }
    public static void main(String[] args)
    {

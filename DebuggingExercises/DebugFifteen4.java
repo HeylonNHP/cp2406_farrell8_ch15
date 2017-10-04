@@ -1,7 +1,7 @@
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
-public class DebugFifteen4 extends JFrame
+public class DebugFifteen4 extends JFrame implements ActionListener
 {
    JMenuBar mainBar = new JMenuBar();
    JMenu menu1 = new JMenu("File");
@@ -24,18 +24,18 @@ public class DebugFifteen4 extends JFrame
       mainBar.add(menu1);
       mainBar.add(menu2);   
       mainBar.add(menu3);
-      menu1.add(exit)
+      menu1.add(exit);
       menu2.add(animal);
       menu2.add(song);
       menu2.add(flower);
-      menu3.add(Milwaukee);
-      menu3.add(Madison);
+      menu3.add(milwaukee);
+      menu3.add(madison);
       exit.addActionListener(this);
       animal.addActionListener(this);
       song.addActionListener(this);
-      flowmer.addActionListener(this);
-      milwalkee.addActionListener(this);
-      madisin.addActionListener(this);
+      flower.addActionListener(this);
+      milwaukee.addActionListener(this);
+      madison.addActionListener(this);
       add(label1);
       label1.setFont(new Font("Arial", Font.BOLD, 14));
       add(label2);
